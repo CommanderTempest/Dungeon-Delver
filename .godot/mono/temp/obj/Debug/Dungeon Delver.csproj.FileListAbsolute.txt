@@ -1,0 +1,17 @@
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.deps.json
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.runtimeconfig.json
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.pdb
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.csproj.AssemblyReference.cache
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.AssemblyInfoInputs.cache
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.AssemblyInfo.cs
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.csproj.CoreCompileInputs.cache
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon .3AAE5883.Up2Date
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\refint\Dungeon Delver.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.pdb
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.genruntimeconfig.cache
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\ref\Dungeon Delver.dll
