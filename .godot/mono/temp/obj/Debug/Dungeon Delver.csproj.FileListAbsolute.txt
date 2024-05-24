@@ -15,3 +15,4 @@ C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\o
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.pdb
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.genruntimeconfig.cache
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\ref\Dungeon Delver.dll
+C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.sourcelink.json
