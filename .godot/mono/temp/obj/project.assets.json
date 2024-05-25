@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kruko\\OneDrive\\Desktop\\Godot\\Projects\\Dungeon Delver\\Dungeon Delver.csproj",
+      "projectUniqueName": "E:\\Godot Projects\\Dungeon Delver\\Dungeon-Delver\\Dungeon Delver.csproj",
       "projectName": "Dungeon Delver",
-      "projectPath": "C:\\Users\\kruko\\OneDrive\\Desktop\\Godot\\Projects\\Dungeon Delver\\Dungeon Delver.csproj",
+      "projectPath": "E:\\Godot Projects\\Dungeon Delver\\Dungeon-Delver\\Dungeon Delver.csproj",
       "packagesPath": "C:\\Users\\kruko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kruko\\OneDrive\\Desktop\\Godot\\Projects\\Dungeon Delver\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "E:\\Godot Projects\\Dungeon Delver\\Dungeon-Delver\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kruko\\AppData\\Roaming\\NuGet\\NuGet.Config"

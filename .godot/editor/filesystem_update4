@@ -1,3 +1,9 @@
 res://Scenes/Characters/Player/player.tscn
-res://Scenes/Levels/main.tscn
 res://Scripts/Character/Player/Player.cs
+res://Scripts/Levels/Main.cs
+res://Scripts/Character/Player/PlayerIdleState.cs
+res://Scripts/Character/Player/PlayerMoveState.cs
+res://Scripts/Character/StateMachine.cs
+res://Scenes/Levels/main.tscn
+res://Scripts/Character/Player/PlayerDashState.cs
+res://Scripts/Character/Player/PlayerState.cs

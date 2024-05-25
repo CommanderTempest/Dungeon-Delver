@@ -16,3 +16,21 @@ C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\o
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.genruntimeconfig.cache
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\ref\Dungeon Delver.dll
 C:\Users\kruko\OneDrive\Desktop\Godot\Projects\Dungeon Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.sourcelink.json
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.deps.json
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.runtimeconfig.json
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.dll
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\Dungeon Delver.pdb
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\GodotSharp.dll
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.csproj.AssemblyReference.cache
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.GeneratedMSBuildEditorConfig.editorconfig
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.AssemblyInfoInputs.cache
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.AssemblyInfo.cs
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.csproj.CoreCompileInputs.cache
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.sourcelink.json
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon .3AAE5883.Up2Date
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.dll
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\refint\Dungeon Delver.dll
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.pdb
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\Dungeon Delver.genruntimeconfig.cache
+E:\Godot Projects\Dungeon Delver\Dungeon-Delver\.godot\mono\temp\obj\Debug\ref\Dungeon Delver.dll
