@@ -10,10 +10,10 @@ public partial class StateMachine : Node
     {
         foreach (var state in states)
         {
-          state.Notification(GameConstants.NOTIFICATION_ENTER_STATE);
+          state.Notification(GameConstants.NOTIFICATION_EXIT_STATE);
         }
 
-        currentState.Notification(GameConstants.NOTIFICATION_EXIT_STATE);
+        currentState.Notification(GameConstants.NOTIFICATION_ENTER_STATE);
     }
 
     public void SwitchState<T>()
