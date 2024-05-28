@@ -8,3 +8,11 @@ res://Scripts/Character/Player/PlayerIdleState.cs
 res://Scripts/Character/Player/PlayerMoveState.cs
 res://Scripts/Character/Player/PlayerDashState.cs
 res://Scripts/Character/Player/PlayerState.cs
+res://Scenes/Characters/Enemy/Enemy.tscn
+res://Scenes/Characters/state_machine.tscn
+res://Scripts/Character/CharacterState.cs
+res://Scripts/Character/Enemy/EnemyIdleState.cs
+res://Scripts/Character/Character.cs
+res://Scripts/Character/Enemy/Enemy.cs
+res://Scripts/Character/Enemy/EnemyState.cs
+res://Scripts/Character/Enemy/EnemyReturnState.cs
