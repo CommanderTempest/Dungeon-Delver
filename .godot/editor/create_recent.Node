@@ -1,7 +1,7 @@
-Node
 CollisionShape3D
 Area3D
 Timer
+Node
 NavigationAgent3D
 NavigationRegion3D
 Path3D
