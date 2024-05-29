@@ -1,13 +1,14 @@
+Node
+CollisionShape3D
+Area3D
+Timer
 NavigationAgent3D
 NavigationRegion3D
-Node
 Path3D
 Node3D
 AnimationPlayer
 Sprite3D
 CharacterBody3D
-CollisionShape3D
 StaticBody3D
 GridMap
-Timer
 Camera3D

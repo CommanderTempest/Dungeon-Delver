@@ -3,15 +3,22 @@ using System;
 
 public partial class EnemyReturnState : EnemyState
 {
-    private Vector3 destination;
 
     public override void _Ready()
     {
         base._Ready();
 
-        Vector3 localPos = characterNode.PathNode.Curve.GetPointPosition(0);
-        Vector3 globalPos = characterNode.PathNode.GlobalPosition;
-        destination = localPos + globalPos;
+       destination = GetPointGlobalPosition(0);
+    }
+
+    public override void _PhysicsProcess(double delta)
+    {
+        if (characterNode.AgentNode.IsNavigationFinished())
+        {
+            characterNode.StateMachineNode.SwitchState<EnemyPatrolState>();
+            return;
+        }
+        Move();
     }
 
     protected override void EnterState()
@@ -19,16 +26,11 @@ public partial class EnemyReturnState : EnemyState
         characterNode.AnimPlayerNode.Play(GameConstants.ANIM_MOVE);
 
         characterNode.AgentNode.TargetPosition = destination;
+        characterNode.ChaseAreaNode.BodyEntered += HandleChaseAreaBodyEntered;
     }
 
-    public override void _PhysicsProcess(double delta)
+    protected override void ExitState()
     {
-        if (characterNode.AgentNode.IsNavigationFinished())
-        {
-            return;
-        }
-
-        characterNode.Velocity = characterNode.GlobalPosition.DirectionTo(destination);
-        characterNode.MoveAndSlide();
+        characterNode.ChaseAreaNode.BodyEntered -= HandleChaseAreaBodyEntered;
     }
 }
