@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=3 uid="uid://blnvv43thqim3"]
+[gd_scene load_steps=121 format=3 uid="uid://blnvv43thqim3"]
 
 [ext_resource type="Script" path="res://Scripts/Character/Enemy/Enemy.cs" id="1_0jvnv"]
 [ext_resource type="Texture2D" uid="uid://dqoe8y5o0lcka" path="res://Assets/Sprites/Characters/Enemy Knight/Death/0_Demons_of_Darkness_Dying_000.png" id="1_chwsi"]
@@ -107,6 +107,7 @@
 [ext_resource type="Script" path="res://Scripts/Character/Enemy/EnemyPatrolState.cs" id="104_7vk80"]
 [ext_resource type="Script" path="res://Scripts/Character/Enemy/EnemyChaseState.cs" id="105_gwcp1"]
 [ext_resource type="Script" path="res://Scripts/Character/Enemy/EnemyAttackState.cs" id="106_8ljxd"]
+[ext_resource type="Script" path="res://Scripts/Character/Enemy/EnemyDeathState.cs" id="108_b870t"]
 
 [sub_resource type="Resource" id="Resource_lnvwj"]
 script = ExtResource("2_83hg6")
@@ -134,6 +135,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("56_fa688"), ExtResource("57_6u1v0"), ExtResource("58_a1bqv"), ExtResource("59_1cmif"), ExtResource("60_fan8i"), ExtResource("61_32iqj"), ExtResource("62_r2dkl"), ExtResource("63_ybsgh"), ExtResource("64_p46x4"), ExtResource("65_rb3sp"), ExtResource("66_tkj7t"), ExtResource("67_uher5")]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StateMachine/AttackState")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2499),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"PerformHit"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_debec"]
@@ -227,9 +242,12 @@ _data = {
 radius = 6.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_fc4q1"]
-radius = 1.4
+radius = 1.15
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("Sprite", "AnimPlayerNode", "StateMachineNode", "HurtboxNode", "AgentNode", "ChaseAreaNode", "AttackAreaNode")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_aheng"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("Sprite", "AnimPlayerNode", "StateMachineNode", "HitboxNode", "HurtboxNode", "HitboxShapeNode", "AgentNode", "ChaseAreaNode", "AttackAreaNode")]
 transform = Transform3D(1.06, 0, 0, 0, 1.06, 0, 0, 0, 1.06, 0, 0, 0)
 collision_layer = 4
 collision_mask = 3
@@ -238,17 +256,19 @@ stats = Array[Object]([SubResource("Resource_lnvwj"), SubResource("Resource_ecqr
 Sprite = NodePath("Sprite3D")
 AnimPlayerNode = NodePath("AnimationPlayer")
 StateMachineNode = NodePath("StateMachine")
+HitboxNode = NodePath("Hitbox")
 HurtboxNode = NodePath("Hurtbox")
+HitboxShapeNode = NodePath("Hitbox/CollisionShape3D")
 AgentNode = NodePath("NavigationAgent3D")
 ChaseAreaNode = NodePath("ChaseArea")
 AttackAreaNode = NodePath("AttackArea")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 pixel_size = 0.0025
-texture = ExtResource("1_db845")
+texture = ExtResource("59_1cmif")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.246955, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_taxnl")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -258,7 +278,7 @@ libraries = {
 
 [node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("100_ugiyx")]
 currentState = NodePath("IdleState")
-states = [NodePath("IdleState"), NodePath("ReturnState"), NodePath("PatrolState"), NodePath("ChaseState"), NodePath("AttackState")]
+states = [NodePath("IdleState"), NodePath("ReturnState"), NodePath("PatrolState"), NodePath("ChaseState"), NodePath("AttackState"), NodePath("DeathState")]
 
 [node name="IdleState" type="Node" parent="StateMachine"]
 script = ExtResource("101_xydo8")
@@ -284,6 +304,9 @@ autostart = true
 [node name="AttackState" type="Node" parent="StateMachine"]
 script = ExtResource("106_8ljxd")
 
+[node name="DeathState" type="Node" parent="StateMachine"]
+script = ExtResource("108_b870t")
+
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 debug_enabled = true
 
@@ -307,4 +330,13 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_taxnl")
+
+[node name="Hitbox" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox"]
+shape = SubResource("BoxShape3D_aheng")
+disabled = true
