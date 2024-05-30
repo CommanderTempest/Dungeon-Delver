@@ -18,3 +18,11 @@ res://Scripts/Character/Enemy/EnemyState.cs
 res://Scripts/Character/Player/PlayerDashState.cs
 res://Scripts/Character/Enemy/EnemyReturnState.cs
 res://Scenes/Characters/Enemy/Enemy.tscn
+res://Scenes/General/ui.tscn
+res://Scenes/Levels/main.tscn
+res://Scripts/Character/Enemy/EnemyDeathState.cs
+res://Scripts/Character/Player/PlayerDeathState.cs
+res://Scripts/UI/UIContainer.cs
+res://Scripts/Levels/Main.cs
+res://Scripts/UI/UIController.cs
+res://Scripts/General/Camera.cs

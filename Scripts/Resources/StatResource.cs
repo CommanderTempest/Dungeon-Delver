@@ -5,7 +5,7 @@ using Godot;
 [GlobalClass] // allows selection of this class in Godot when creating objects
 public partial class StatResource : Resource
 {
-    public Action OnZero; // signal
+    public event Action OnZero; // signal
 
     [Export] public Stat StatType {get; private set;}
 

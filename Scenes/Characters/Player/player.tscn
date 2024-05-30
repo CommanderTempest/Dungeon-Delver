@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://bqe2x7ssfy5p"]
+[gd_scene load_steps=95 format=3 uid="uid://bqe2x7ssfy5p"]
 
 [ext_resource type="Texture2D" uid="uid://c6n83aoyi4a0i" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_3qquj"]
 [ext_resource type="Texture2D" uid="uid://dollbeww6kdmt" path="res://Assets/Sprites/Characters/Player/Running/Running_000.png" id="1_bnevo"]
@@ -82,6 +82,7 @@
 [ext_resource type="Texture2D" uid="uid://bctsbgk5nm68e" path="res://Assets/Sprites/Characters/Player/Dying/Dying_012.png" id="75_g5jqy"]
 [ext_resource type="Texture2D" uid="uid://cecwmdo6dfeqh" path="res://Assets/Sprites/Characters/Player/Dying/Dying_013.png" id="76_iea5u"]
 [ext_resource type="Texture2D" uid="uid://cjjd6n1yor244" path="res://Assets/Sprites/Characters/Player/Dying/Dying_014.png" id="77_qsher"]
+[ext_resource type="Script" path="res://Scripts/Character/Player/PlayerDeathState.cs" id="83_sybn8"]
 
 [sub_resource type="Resource" id="Resource_dakni"]
 script = ExtResource("2_4y0ye")
@@ -287,6 +288,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="DeathState" type="Node" parent="StateMachine"]
+script = ExtResource("83_sybn8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.246955, 0)
