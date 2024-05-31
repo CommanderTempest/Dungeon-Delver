@@ -1,5 +1,10 @@
-Button
+AnimationPlayer
+Sprite3D
+CollisionShape3D
+Area3D
+StaticBody3D
 VBoxContainer
+Button
 MarginContainer
 PanelContainer
 TextureRect
@@ -7,8 +12,4 @@ Label
 HBoxContainer
 Panel
 Node
-CollisionShape3D
-Area3D
 Timer
-NavigationAgent3D
-NavigationRegion3D

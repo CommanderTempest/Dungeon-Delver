@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d1qsmewf2y3nh"]
+[gd_scene load_steps=18 format=3 uid="uid://d1qsmewf2y3nh"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Main.cs" id="1_oiert"]
 [ext_resource type="PackedScene" uid="uid://bqe2x7ssfy5p" path="res://Scenes/Characters/Player/player.tscn" id="2_ojts8"]
@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://c1eq6uahnd1y3" path="res://Scenes/General/ui.tscn" id="5_f2iy1"]
 [ext_resource type="Script" path="res://Scripts/General/Camera.cs" id="6_qkupa"]
 [ext_resource type="Script" path="res://Scripts/Resources/StatResource.cs" id="7_hjppu"]
+[ext_resource type="PackedScene" uid="uid://b86w7w8aqibml" path="res://Scenes/Reward/treasure_chest.tscn" id="9_ab344"]
+[ext_resource type="Texture2D" uid="uid://2tp4qp5ve5ou" path="res://Assets/Sprites/UI/UI ElementUI 13.png" id="10_3qkbd"]
+[ext_resource type="Script" path="res://Scripts/Reward/RewardResource.cs" id="11_7bidr"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_7ew5i"]
 vertices = PackedVector3Array(-25, 5.4, -18.5, -19, 5.4, -18.5, -18.75, 5.4, -21.25, -19, 5.4, -30.5, -25, 5.4, -30.5, -26, 9.4, -17.75, -26, 9.4, -17, -25.5, 9.4, -17.25, -18.5, 9.4, -17.5, -18, 9.4, -17, -18, 9.4, -17.75, -19, 1.4, -16.5, -19.75, 1.4, -16.5, -19.75, 1.4, -11.75, -19, 1.4, -6.75, -24, 1.4, -11.75, -24.25, 1.4, -16.5, -25, 1.4, -16.5, -25, 1.4, -6.75, -21, 5.4, -17, -23, 5.4, -17, -23, 1.9, -11.75, -20.75, 1.9, -11.75, -19, 1.4, -6.75, -20.75, 1.9, -11.75, -23, 1.9, -11.75, -25, 1.4, -6.75, -20.3125, 1.4, -10.5, -23.5, 1.4, -10.5, -19, 1.4, -6.75, -19.75, 1.4, -11.75, -20.75, 1.9, -11.75, -20.3125, 1.4, -10.5, -23, 1.9, -11.75, -24, 1.4, -11.75, -25, 1.4, -6.75, -23.5, 1.4, -10.5, 32.5, 1.4, -15.5, 32.5, 1.4, -7.5, 33, 1.4, -7.5, 33, 1.4, -15.5, 35, 1.4, -6.5, 45, 1.4, -6.5, 45, 1.4, -15.5, 35, 1.4, -15.5, 47, 1.4, -15.5, 47, 1.4, 5.5, 47.5, 1.4, 5.5, 47.5, 1.4, -15.5, -18.25, 1.4, -5.5, -19, 1.4, -6.75, -25, 1.4, -6.75, -25.75, 1.4, -5.5, -29, 1.4, 5.5, -16.25, 1.4, 5.5, -25.75, 1.4, -5.5, -29, 1.4, -5.5, -29, 1.4, 5.5, -16.25, 1.4, 5.5, -16.25, 1.4, -5.5, -18.25, 1.4, -5.5, 45, 1.4, -6.5, 35, 1.4, -6.5, 34.25, 1.4, -5.5, 32.25, 1.4, 5.5, 45, 1.4, 5.5, 34.25, 1.4, -5.5, 32.25, 1.4, -5.5, 32.25, 1.4, 5.5, -16.25, 1.4, 5.5, 32.25, 1.4, 5.5, 32.25, 1.4, -5.5, -16.25, 1.4, -5.5)
@@ -33,6 +36,13 @@ StatValue = 20.0
 script = ExtResource("7_hjppu")
 StatType = 1
 StatValue = 4.0
+
+[sub_resource type="Resource" id="Resource_ywsgm"]
+script = ExtResource("11_7bidr")
+SpriteTexture = ExtResource("10_3qkbd")
+Description = "+4 Damage"
+TargetStat = 1
+Amount = 4.0
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_oiert")
@@ -90,3 +100,7 @@ transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 
 script = ExtResource("6_qkupa")
 target = NodePath("../Player")
 positionFromTarget = Vector3(0, 2, 6)
+
+[node name="TreasureChest" parent="." instance=ExtResource("9_ab344")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0043, 2, -2)
+reward = SubResource("Resource_ywsgm")
