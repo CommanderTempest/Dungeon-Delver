@@ -1,11 +1,11 @@
-res://Scripts/General
 res://Scripts/UI
+res://Scripts/Character/Enemy
+res://Resources
+res://Scripts/General
 res://Scenes/General
 res://Scripts/Character/Player
-res://Scripts/Character/Enemy
 res://Scenes/Characters
 res://Scenes/Characters/Enemy
-res://Resources
 res://Scenes/Levels
 res://Scripts/Character
 C:/Users/kruko/AppData/Local/Programs/Microsoft VS Code

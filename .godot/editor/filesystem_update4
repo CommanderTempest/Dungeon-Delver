@@ -26,3 +26,6 @@ res://Scripts/UI/UIContainer.cs
 res://Scripts/Levels/Main.cs
 res://Scripts/UI/UIController.cs
 res://Scripts/General/Camera.cs
+res://Scripts/UI/StatLabel.cs
+res://Scripts/Character/Enemy/EnemiesContainer.cs
+res://Scripts/UI/EnemyCountLabel.cs
