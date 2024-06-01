@@ -1,7 +1,9 @@
-AnimationPlayer
-Sprite3D
+Timer
+Node
 CollisionShape3D
 Area3D
+AnimationPlayer
+Sprite3D
 StaticBody3D
 VBoxContainer
 Button
@@ -10,6 +12,3 @@ PanelContainer
 TextureRect
 Label
 HBoxContainer
-Panel
-Node
-Timer

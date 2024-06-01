@@ -1,8 +1,11 @@
+res://Scripts/Character/Enemy
+res://Shaders
+res://Scripts/Character
+res://Scripts/Abilities
 res://Scenes/Abilities
 res://Scripts/Reward
 res://Scenes/Reward
 res://Scripts/UI
-res://Scripts/Character/Enemy
 res://Resources
 res://Scripts/General
 res://Scenes/General
@@ -10,7 +13,6 @@ res://Scripts/Character/Player
 res://Scenes/Characters
 res://Scenes/Characters/Enemy
 res://Scenes/Levels
-res://Scripts/Character
 C:/Users/kruko/AppData/Local/Programs/Microsoft VS Code
 res://Scripts/Levels
 res://Scenes/Characters/Player

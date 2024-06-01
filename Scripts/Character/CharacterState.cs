@@ -1,7 +1,9 @@
+using System;
 using Godot;
 
 public abstract partial class CharacterState : Node
 {
+  public Func<bool> CanTransition = () => true;
   protected Character characterNode;
 
   public override void _Ready()
